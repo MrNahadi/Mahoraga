@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./mahoraga.db
+    volumes:
+      - ./backend:/app
+      - ./data:/app/data
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  db:
+    image: alpine:latest
+    command: ["sh", "-c", "mkdir -p /data && touch /data/mahoraga.db"]
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+
+volumes:
+  data:

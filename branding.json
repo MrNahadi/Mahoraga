@@ -1,0 +1,129 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "anthropicSans",
+      "count": 64
+    },
+    {
+      "family": "anthropicSans Fallback",
+      "count": 64
+    },
+    {
+      "family": "system-ui",
+      "count": 64
+    },
+    {
+      "family": "Segoe UI",
+      "count": 64
+    },
+    {
+      "family": "Roboto",
+      "count": 64
+    },
+    {
+      "family": "Helvetica",
+      "count": 64
+    },
+    {
+      "family": "Arial",
+      "count": 64
+    },
+    {
+      "family": "sans-serif",
+      "count": 64
+    },
+    {
+      "family": "anthropicSerif",
+      "count": 15
+    },
+    {
+      "family": "anthropicSerif Fallback",
+      "count": 15
+    }
+  ],
+  "colors": {
+    "primary": "#171717",
+    "accent": "#f5f5f5",
+    "background": "#ffffff",
+    "textPrimary": "#0a0a0a",
+    "link": "#171717"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Public Sans",
+      "heading": "Public Sans"
+    },
+    "fontStacks": {
+      "body": [
+        "Public Sans",
+        "ui-sans-serif",
+        "system-ui",
+        "sans-serif"
+      ],
+      "heading": [
+        "Public Sans",
+        "ui-sans-serif",
+        "system-ui",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Public Sans",
+        "ui-sans-serif",
+        "system-ui",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "36px",
+      "h2": "56px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "10px"
+  },
+  "components": {
+    "input": {
+      "background": "#FFFFFF",
+      "textColor": "#141413",
+      "borderColor": "#D9D8D5",
+      "borderRadius": "9.6px",
+      "borderRadiusCorners": {
+        "topLeft": "9.6px",
+        "topRight": "9.6px",
+        "bottomRight": "9.6px",
+        "bottomLeft": "9.6px"
+      },
+      "shadow": "none"
+    },
+    "logos": {
+      "black logo": "./mahoraga"
+    }
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Strong indicators: in header, header location, visible, top-left position, highest logo on page, reasonable size, SVG format. Score: 90 (clear winner by 90 points)",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "LLM failed"
+    },
+    "secondary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "LLM failed"
+    },
+    "confidence": 0
+  },
+  "confidence": {
+    "buttons": 0,
+    "colors": 0,
+    "overall": 0
+  }
+}
