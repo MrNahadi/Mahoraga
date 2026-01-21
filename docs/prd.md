@@ -52,7 +52,7 @@ classification:
 
 **Date:** 2026-01-19  
 
-**Project:** DVHacks Hackathon Entry
+**Project:** Mahoraga
 
 ## Executive Summary
 

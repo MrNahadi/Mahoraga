@@ -1,0 +1,420 @@
+# =====================================
+# Mahoraga Project - Comprehensive .gitignore
+# =====================================
+
+# =====================================
+# Python Backend
+# =====================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Virtual environments (NOTE: /lib excluded to avoid frontend conflicts)
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+virtualenv/
+
+# =====================================
+# Node.js / Frontend
+# =====================================
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build output
+/frontend/dist/
+/frontend/build/
+.next/
+out/
+*.tsbuildinfo
+
+# Yarn
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+*.log
+
+# Optional npm cache directory
+.npm/
+
+# Parcel cache
+.parcel-cache
+
+# Vite
+*.local
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Rollup cache
+.rollup.cache
+
+# SvelteKit
+.svelte-kit
+
+# ESLint cache
+.eslintcache
+
+# Stylelint cache
+.stylelintcache
+
+# Prettier cache
+.prettiercache
+
+# =====================================
+# Environment & Configuration
+# =====================================
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Keep example files
+!.env.example
+!.env.sample
+
+# =====================================
+# IDEs & Editors
+# =====================================
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# IntelliJ / PyCharm / WebStorm
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# TextMate
+*.tmproj
+*.tmproject
+tmtags
+
+# =====================================
+# Operating Systems
+# =====================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+
+# =====================================
+# Databases
+# =====================================
+
+# SQLite
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Redis dump
+dump.rdb
+
+# =====================================
+# Logs & Temporary Files
+# =====================================
+
+# Logs
+logs/
+*.log
+log/
+*.log.*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# =====================================
+# Testing
+# =====================================
+
+# Test databases
+test_*.db
+*_test.db
+
+# Coverage reports
+coverage/
+*.lcov
+.nyc_output/
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# =====================================
+# Docker
+# =====================================
+
+# Docker override files
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# Docker data volumes (if stored locally)
+.docker-data/
+
+# =====================================
+# Build & Compiled Output
+# =====================================
+
+# General build directories
+/build/
+/dist/
+/out/
+
+# =====================================
+# Secrets & Credentials
+# =====================================
+
+# SSH keys
+*.pem
+*.key
+*.pub
+
+# Credentials
+credentials.json
+secrets.json
+*.credential*
+
+# Service account keys
+service-account*.json
+*-service-account.json
+
+# =====================================
+# AI/ML Artifacts
+# =====================================
+
+# Model files (large binary files)
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.pb
+*.bin
+
+# Keep specific model files if needed
+!backend/models/.gitkeep
+
+# =====================================
+# Miscellaneous
+# =====================================
+
+# Kiro AI
+.kiro/
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Backup files
+*.orig
+*.bak
+
+# Lock files (except package-lock.json for npm)
+*.lock
+!package-lock.json
+
+# Debug files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Server PID files
+*.pid
+
+# Asset cache
+.cache/
+.asset-cache

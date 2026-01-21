@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Layout } from './components/layout/Layout';
@@ -9,6 +8,7 @@ import { AssignmentHistory } from './pages/AssignmentHistory';
 import { UserManagement } from './pages/UserManagement';
 import { Settings } from './pages/Settings';
 import { Configuration } from './pages/Configuration';
+import { Glossary } from './pages/Glossary';
 
 // Create a client
 const queryClient = new QueryClient({
@@ -34,6 +34,7 @@ function App() {
                         <Route path="users" element={<UserManagement />} />
                         <Route path="settings" element={<Settings />} />
                         <Route path="configuration" element={<Configuration />} />
+                        <Route path="glossary" element={<Glossary />} />
                     </Route>
                 </Routes>
             </Router>
